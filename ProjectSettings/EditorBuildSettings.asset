@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Inicio/Logo.unity
+    guid: 4ba51b85341e42a45871985f15b99cc6
+  - enabled: 1
+    path: Assets/Scenes/Inicio/Inicio.unity
+    guid: 8e74c8a3c1d1caf4d9bf036b0bd143ab
+  - enabled: 1
+    path: Assets/Scenes/Inicio/Transicion.unity
+    guid: ab779eae556f87e44852f038b09a5622
+  - enabled: 1
+    path: "Assets/Scenes/Men\xFA/Menu Principal.unity"
+    guid: 455222ff9d36c2b4298a6ac0200ad74d
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel 1.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel 2.unity
+    guid: 8fb1807251d19f74d9cf1348cce8d915
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel 3.unity
+    guid: d1904e46c184e7c418e5c0a61aedbe82
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel 4.unity
+    guid: f7c6ca8ebf2fdfa47a28d54d4f2c4fba
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel 5.unity
+    guid: 65638514a07b7c344b9c4e95d4dc0db1
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel 6.unity
+    guid: e8b6387bbcf734c47b77b0a2c2387c55
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Let'sGo1.unity
+    guid: b740ee0251ebe64498410f72aedd99e8
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Let'sGo2.unity
+    guid: d6fa83a4e55634844af2cf880a3320f7
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Let'sGo3.unity
+    guid: f802adec167380f41912bba6f91b4435
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Let'sGo4.unity
+    guid: 3edb9d1680fca7b46b2afab59aba3e9a
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Let'sGo5.unity
+    guid: d74b1f64186b28f4db0b12913d023618
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Let'sGo6.unity
+    guid: 099a0553eacb4794a81ad3feb628b3ab
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Loading1.unity
+    guid: d0d2de121432035449c0a2b19d0b4e32
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Loading2.unity
+    guid: 18c2349aec3ae4d42baa5802da096453
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Loading3.unity
+    guid: d421709ad44b3d7498729f2d74567fca
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Loading4.unity
+    guid: 6dd6fad09a04836498001d56548e9f08
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Loading5.unity
+    guid: 233e94ff9a782024fafad92ec3a645a0
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/Loading6.unity
+    guid: 2fcc69c40f7e48e4fa6bf74127293c44
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Pierdo1.unity
+    guid: 87bf3643c06fd14448162f4f0546a00b
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Pierdo2.unity
+    guid: 54ef41bae146a174bb2e996d4b08979a
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Pierdo3.unity
+    guid: d2e9391b8bc5a7141b8931c17a40181e
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Pierdo4.unity
+    guid: 618abae6e939f624facf3e143e7fec2c
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Pierdo5.unity
+    guid: c34c4a2f5b26af24db7379c868a50258
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Pierdo6.unity
+    guid: a3c99ca2089a6cf4cac9160efbf81a2b
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Ganador1.unity
+    guid: 16b017918e919004a8bc33e302f93f1f
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Ganador2.unity
+    guid: 3df08f3e591911c4581a79e460facae3
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Ganador3.unity
+    guid: 97f26e5b1e904d9469a87c07012e46d6
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Ganador4.unity
+    guid: 7c078fcc46803d141a23a67862d82448
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Ganador5.unity
+    guid: 10944218a82990448a580796e2ab8b86
+  - enabled: 1
+    path: Assets/Scenes/Win - Game Over/Ganador6.unity
+    guid: 5d26caa5410cd8949b9e28eb540f7c7f
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/AnotherRound1.unity
+    guid: 56a78dbdff06d7d4cb280aeb7783d41f
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/AnotherRound2.unity
+    guid: 0b5e745d0ba982b4fb825d50fa53e600
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/AnotherRound3.unity
+    guid: 3e2081811d209d141a48d87da20ddc51
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/AnotherRound4.unity
+    guid: ead3d791bbc4e6043a03240440fd0d40
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/AnotherRound5.unity
+    guid: c21703a421038bc4ca3050c29db6c01f
+  - enabled: 1
+    path: Assets/Scenes/Transiciones/AnotherRound6.unity
+    guid: 8f1b1a0eb27f2ba4d9d63a4c6dc97b33
+  m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 516f358df5d7ec4468b2afc31af3b5b8, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 1d537b635f6e06f40a31180c761d643d, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: f7d4010802d1a534caa4b9afb04f0022, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 10b73e539c20d8e409c3ca5295d3d62a, type: 2}
+  m_UseUCBPForAssetBundles: 0

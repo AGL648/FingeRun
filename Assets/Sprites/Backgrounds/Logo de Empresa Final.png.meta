@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: e6d61c67ae99d4949ab7e848b8171d96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2705227913909769777
+    second: Logo de Empresa Final_0
+  - first:
+      213: -1441991318885606916
+    second: Logo de Empresa Final_1
+  - first:
+      213: -700921347806932842
+    second: Logo de Empresa Final_2
+  - first:
+      213: -1577148284457257784
+    second: Logo de Empresa Final_3
+  - first:
+      213: -2619693480400425700
+    second: Logo de Empresa Final_4
+  - first:
+      213: 1009989186748028895
+    second: Logo de Empresa Final_5
+  - first:
+      213: -6434271661310414213
+    second: Logo de Empresa Final_6
+  - first:
+      213: 525302887509870196
+    second: Logo de Empresa Final_7
+  - first:
+      213: -4743069047704194525
+    second: Logo de Empresa Final_8
+  - first:
+      213: 7320626213014597543
+    second: Logo de Empresa Final_9
+  - first:
+      213: -3147816083649051843
+    second: Logo de Empresa Final_10
+  - first:
+      213: -7107651852328198690
+    second: Logo de Empresa Final_11
+  - first:
+      213: 592124629219323026
+    second: Logo de Empresa Final_12
+  - first:
+      213: -4197731864290559416
+    second: Logo de Empresa Final_13
+  - first:
+      213: 457444201997360364
+    second: Logo de Empresa Final_14
+  - first:
+      213: -309705027109934448
+    second: Logo de Empresa Final_15
+  - first:
+      213: 8431630936291282015
+    second: Logo de Empresa Final_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Logo de Empresa Final_0
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 853
+        width: 699
+        height: 1073
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136101d6476ea8520800000000000000
+      internalID: 2705227913909769777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_1
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 601
+        width: 105
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf950a419840dfbe0800000000000000
+      internalID: -1441991318885606916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_2
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 598
+        width: 125
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690da707fb3d546f0800000000000000
+      internalID: -700921347806932842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_3
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 601
+        width: 92
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4fecacdf7dc1ae0800000000000000
+      internalID: -1577148284457257784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_4
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 553
+        width: 134
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d6358c8aaf4abd0800000000000000
+      internalID: -2619693480400425700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_5
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 601
+        width: 136
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd71a1f60d3340e00800000000000000
+      internalID: 1009989186748028895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_6
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 601
+        width: 134
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72fa37a300e4b6a0800000000000000
+      internalID: -6434271661310414213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_7
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 601
+        width: 108
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476438961304a4700800000000000000
+      internalID: 525302887509870196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_8
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 598
+        width: 116
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322f07ab4db3d2eb0800000000000000
+      internalID: -4743069047704194525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_9
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 602
+        width: 202
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afe52021c6189560800000000000000
+      internalID: 7320626213014597543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_10
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 598
+        width: 126
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3346d323f5b054d0800000000000000
+      internalID: -3147816083649051843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_11
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 601
+        width: 103
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd94da5c4c8c5d90800000000000000
+      internalID: -7107651852328198690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_12
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 601
+        width: 13
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ca06b8636a73800800000000000000
+      internalID: 592124629219323026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_13
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 601
+        width: 96
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a7f962c19aeb5c0800000000000000
+      internalID: -4197731864290559416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_14
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 598
+        width: 108
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec5d9cf31b295600800000000000000
+      internalID: 457444201997360364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_15
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 745
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09aa5f13be4b3bbf0800000000000000
+      internalID: -309705027109934448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo de Empresa Final_16
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 745
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c06d2f9ab230570800000000000000
+      internalID: 8431630936291282015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Logo de Empresa Final_0: 2705227913909769777
+      Logo de Empresa Final_1: -1441991318885606916
+      Logo de Empresa Final_10: -3147816083649051843
+      Logo de Empresa Final_11: -7107651852328198690
+      Logo de Empresa Final_12: 592124629219323026
+      Logo de Empresa Final_13: -4197731864290559416
+      Logo de Empresa Final_14: 457444201997360364
+      Logo de Empresa Final_15: -309705027109934448
+      Logo de Empresa Final_16: 8431630936291282015
+      Logo de Empresa Final_2: -700921347806932842
+      Logo de Empresa Final_3: -1577148284457257784
+      Logo de Empresa Final_4: -2619693480400425700
+      Logo de Empresa Final_5: 1009989186748028895
+      Logo de Empresa Final_6: -6434271661310414213
+      Logo de Empresa Final_7: 525302887509870196
+      Logo de Empresa Final_8: -4743069047704194525
+      Logo de Empresa Final_9: 7320626213014597543
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
