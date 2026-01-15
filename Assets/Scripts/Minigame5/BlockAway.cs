@@ -9,7 +9,7 @@ public class BlockAway : MonoBehaviour
     public Vector2 direccionDeGolpeo;
     public float NuevaVelocidadDeGolpeo;
     public Animator anim;
-    public AudioSource PersonaDaño;
+    public AudioSource PersonaDano;
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +31,9 @@ public class BlockAway : MonoBehaviour
 
             if (Player != null && Player.GetCurrentAnimatorStateInfo(0).IsName("Block"))
             {
-                rb.velocity = direccionDeGolpeo.normalized * NuevaVelocidadDeGolpeo;
+                rb.linearVelocity = direccionDeGolpeo.normalized * NuevaVelocidadDeGolpeo;
                 anim.SetTrigger("Death");
-                PersonaDaño.Play();
+                PersonaDano.Play();
             }
         }
 

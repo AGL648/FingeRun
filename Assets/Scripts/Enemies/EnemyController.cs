@@ -7,10 +7,10 @@ public class EnemyController : MonoBehaviour
     //Velocidad del enemigo
     public float moveSpeed;
 
-    //Posiciones más a la izquierda y más a la derecha que se va a poder mover el enemigo
+    //Posiciones mï¿½s a la izquierda y mï¿½s a la derecha que se va a poder mover el enemigo
     public Transform leftPoint, rightPoint;
 
-    //Variable para conocer la dirección de movimiento del enemigo
+    //Variable para conocer la direcciï¿½n de movimiento del enemigo
     private bool movingRight;
 
     //Referencia al RigidBody del enemigo
@@ -27,18 +27,18 @@ public class EnemyController : MonoBehaviour
     {
         //Inicializamos el Rigidbody del enemigo
         theRB = GetComponent<Rigidbody2D>();
-        //Inicializamos el SpriteRenderer del enemigo teniendo en cuenta que está en el GO hijo
+        //Inicializamos el SpriteRenderer del enemigo teniendo en cuenta que estï¿½ en el GO hijo
         theSR = GetComponentInChildren<SpriteRenderer>();
 
         //Sacamos el Leftpoint y el Rightpoint del objeto padre, para que no se muevan junto con este
-        leftPoint.parent = null;//null es vacío o no tiene en este caso
+        leftPoint.parent = null;//null es vacï¿½o o no tiene en este caso
         rightPoint.parent = null;
 
         animator = GetComponent<Animator>();
     }
 
-    public void TomarDaño(float daño){
-        vida -= daño;
+    public void TomarDano(float dano){
+        vida -= dano;
         if(vida <= 0){
             GetComponentInParent<EnemyDeath>().EnemyDeathController();
             Muerte();
@@ -52,35 +52,35 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Si el enemigo se está moviendo hacia la derecha
+        //Si el enemigo se estï¿½ moviendo hacia la derecha
         if (movingRight)
         {
             //Aplicamos una velocidad hacia la derecha al enemigo
-            theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
+            theRB.linearVelocity = new Vector2(moveSpeed, theRB.linearVelocity.y);
 
             //Giramos en horizontal el sprite del enemigo
             theSR.flipX = true;
 
-            //Si la posición en X del enemigo está más a la derecha que el RighPoint
+            //Si la posiciï¿½n en X del enemigo estï¿½ mï¿½s a la derecha que el RighPoint
             if (transform.position.x > rightPoint.position.x)
             {
-                //Ya no se moverá a la derecha sino a la izquierda
+                //Ya no se moverï¿½ a la derecha sino a la izquierda
                 movingRight = false;
             }
         }
-        //Si el enemigo se está moviendo hacia la izquierda
+        //Si el enemigo se estï¿½ moviendo hacia la izquierda
         else
         {
             //Aplicamos una velocidad hacia la izquierda al enemigo
-            theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
+            theRB.linearVelocity = new Vector2(-moveSpeed, theRB.linearVelocity.y);
 
-            //Mantenemos la dirección hacia la que mira el sprite
+            //Mantenemos la direcciï¿½n hacia la que mira el sprite
             theSR.flipX = false;
 
-            //Si la posición en X del enemigo está más a la izquierda que el LeftPoint
+            //Si la posiciï¿½n en X del enemigo estï¿½ mï¿½s a la izquierda que el LeftPoint
             if (transform.position.x < leftPoint.position.x)
             {
-                //Ya no se moverá a la izquierda sino a la derecha
+                //Ya no se moverï¿½ a la izquierda sino a la derecha
                 movingRight = true;
             }
         }

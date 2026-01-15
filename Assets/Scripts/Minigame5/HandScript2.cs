@@ -23,7 +23,7 @@ public class HandScript2 : MonoBehaviour
 	public AudioSource Deslizar;
 	public AudioSource Golpe;
 	public AudioSource Bloqueo;
-	public AudioSource Daño;
+	public AudioSource Dano;
 
 
 
@@ -72,12 +72,12 @@ public class HandScript2 : MonoBehaviour
 			if (distanciatotalenY > distanciatotalenX)
 			{
 
-				if (endTouchPosition.y > startTouchPosition.y && rb.velocity.y == 0)
+				if (endTouchPosition.y > startTouchPosition.y && rb.linearVelocity.y == 0)
 				{
 					JumpIfAllowed();
 				}
 
-				if (endTouchPosition.y < startTouchPosition.y && rb.velocity.y == 0)
+				if (endTouchPosition.y < startTouchPosition.y && rb.linearVelocity.y == 0)
 				{
 					CrouchIfAllowed();
 				}
@@ -86,12 +86,12 @@ public class HandScript2 : MonoBehaviour
 			else
 			{
 
-				if (endTouchPosition.x > startTouchPosition.x && rb.velocity.x == 0)
+				if (endTouchPosition.x > startTouchPosition.x && rb.linearVelocity.x == 0)
 				{
 					AttackIfAllowed();
 				}
 
-				if (endTouchPosition.x < startTouchPosition.x && rb.velocity.x == 0)
+				if (endTouchPosition.x < startTouchPosition.x && rb.linearVelocity.x == 0)
 				{
 					BlockIfAllowed();
 				}
@@ -106,7 +106,7 @@ public class HandScript2 : MonoBehaviour
 	{
 		if (isGrounded == true)
 		{
-			GetComponent<Rigidbody2D>().velocity = Vector2.up * jumpForce;
+			GetComponent<Rigidbody2D>().linearVelocity = Vector2.up * jumpForce;
 			//rb.AddForce(Vector2.up * jumpForce);
 			anim.SetTrigger("Jump");
 			Salto.Play();
@@ -168,7 +168,7 @@ public class HandScript2 : MonoBehaviour
 			LifeTxt.text = "" + life;
 			anim.SetBool("Hurt", true);
 			Damaged = true;
-			Daño.Play();
+			Dano.Play();
 		}
 
 
@@ -178,7 +178,7 @@ public class HandScript2 : MonoBehaviour
 			LifeTxt.text = "" + life;
 			anim.SetBool("Hurt", true);
 			Damaged = true;
-			Daño.Play();
+			Dano.Play();
 		}
 
 		if (anim.GetCurrentAnimatorStateInfo(0).IsName("Jump") && isGrounded == false && collision.gameObject.CompareTag("Spike"))
@@ -187,7 +187,7 @@ public class HandScript2 : MonoBehaviour
 			LifeTxt.text = "" + life;
 			anim.SetBool("Hurt", true);
 			Damaged = true;
-			Daño.Play();
+			Dano.Play();
 		}
 
 
@@ -196,7 +196,7 @@ public class HandScript2 : MonoBehaviour
 			life -= 1;
 			LifeTxt.text = "" + life;
 			anim.SetBool("Hurt", true);
-			Daño.Play();
+			Dano.Play();
 		}
 
 		if (anim.GetCurrentAnimatorStateInfo(0).IsName("Hurt"))
@@ -211,13 +211,13 @@ public class HandScript2 : MonoBehaviour
 			print("Has perdido");
 			anim.SetTrigger("Hurt");
 			SceneManager.LoadScene(startScene2);
-			Daño.Play();
+			Dano.Play();
 		}
 		else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Hurt"))
 		{
 			Damaged = true;
 			isGrounded = true;
-			Daño.Play();
+			Dano.Play();
 		}
 	}
     public void OnCollisionExit2D(Collision2D collision)

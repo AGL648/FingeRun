@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     private TrailRenderer tr;
     public string startScene;
     public string startScene2;
-    //Variable para saber si el jugador está en el suelo
+    //Variable para saber si el jugador estï¿½ en el suelo
     private bool isGrounded;
     //Punto por debajo del jugador que tomamos como referencia para detectar el suelo
     public Transform groundCheckPoint;
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
 
     //Variables para el contador de tiempo del KnockBack
-    public float knockBackLength, knockBackForce; //Valor que tendrá el contador de KnockBack, y la fuerza de KnockBack
+    public float knockBackLength, knockBackForce; //Valor que tendrï¿½ el contador de KnockBack, y la fuerza de KnockBack
     private float knockBackCounter; //Contador de KnockBack
 
     //Variable para saber si podemos hacer doble salto
@@ -80,52 +80,52 @@ public class PlayerController : MonoBehaviour
         if (knockBackCounter <= 0)
         {
             //El jugador se mueve 8 en X, y la velocidad que ya tuviera en Y
-            theRB.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
+            theRB.linearVelocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.linearVelocity.y);
 
-            //La variable isGrounded se hará true siempre que el círculo físico que hemos creado detecte suelo
-            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);//OverlapCircle(punto donde se genera el círculo, radio del círculo, layer a detectar)
+            //La variable isGrounded se harï¿½ true siempre que el cï¿½rculo fï¿½sico que hemos creado detecte suelo
+            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);//OverlapCircle(punto donde se genera el cï¿½rculo, radio del cï¿½rculo, layer a detectar)
 
-            //Si se pulsa el botón de salto
+            //Si se pulsa el botï¿½n de salto
             if (Input.GetButtonDown("Jump"))
             {
-                //Si el jugador está en el suelo
+                //Si el jugador estï¿½ en el suelo
                 if (isGrounded)
                 {
                     //El jugador salta, manteniendo su velocidad en X, y aplicamos la fuerza de salto
-                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                    theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, jumpForce);
                     //Una vez en el suelo, reactivamos la posibilidad de doble salto
                     canDoubleJump = true;
                     Debug.Log("salto");
                 }
-                //Si el jugador no está en el suelo
+                //Si el jugador no estï¿½ en el suelo
                 else
                 {
                     //Si la variable booleana canDoubleJump es verdadera
                     if (canDoubleJump)
                     {
                         //El jugador salta, manteniendo su velocidad en X, y aplicamos la fuerza de salto
-                        theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                        theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, jumpForce);
                         //Hacemos que no se pueda volver a saltar de nuevo
                         canDoubleJump = false;
                     }
                 }
             }
 
-            //Girar el sprite del jugador según su dirección de movimiento
+            //Girar el sprite del jugador segï¿½n su direcciï¿½n de movimiento
             //Si el jugador se mueve hacia la izquierda
-            if (theRB.velocity.x < 0)
+            if (theRB.linearVelocity.x < 0)
             {
-                //No cambiamos la dirección del sprite
+                //No cambiamos la direcciï¿½n del sprite
                 theSR.flipX = true;
                 //El jugador mira a la izquierda
                 isLeft = true;
                 isRight = false;
                
             }
-            //Si el jugador por el contrario se está moviendo hacia la derecha
-            else if (theRB.velocity.x > 0)
+            //Si el jugador por el contrario se estï¿½ moviendo hacia la derecha
+            else if (theRB.linearVelocity.x > 0)
             {
-                //Cambiamos la dirección del sprite
+                //Cambiamos la direcciï¿½n del sprite
                 theSR.flipX = false;
                 //El jugador mira a la derecha
                 isLeft = false;
@@ -133,7 +133,7 @@ public class PlayerController : MonoBehaviour
                 
             }
         }
-        //Si el contador de KnockBack todavía no está vacío
+        //Si el contador de KnockBack todavï¿½a no estï¿½ vacï¿½o
         else
         {
             //Hacemos decrecer el contador en 1 cada segundo
@@ -141,21 +141,21 @@ public class PlayerController : MonoBehaviour
             //Si el jugador mira a la izquierda
             if (!theSR.flipX)
             {
-                //Aplicamos un pequeño empuje a la derecha
-                theRB.velocity = new Vector2(knockBackForce, theRB.velocity.y);
+                //Aplicamos un pequeï¿½o empuje a la derecha
+                theRB.linearVelocity = new Vector2(knockBackForce, theRB.linearVelocity.y);
             }
             //Si el jugador mira a la derecha
             else
             {
-                //Aplicamos un pequeño empuje a la izquierda
-                theRB.velocity = new Vector2(-knockBackForce, theRB.velocity.y);
+                //Aplicamos un pequeï¿½o empuje a la izquierda
+                theRB.linearVelocity = new Vector2(-knockBackForce, theRB.linearVelocity.y);
             }
         }
 
         //ANIMACIONES DEL JUGADOR
-        //Cambiamos el valor del parámetro del Animator "moveSpeed", dependiendo del valor en X de la velocidad de Rigidbody
-        anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));//Mathf.Abs hace que un valor negativo sea positivo, lo que nos permite que al movernos a la izquierda también se anime esta acción
-        //Cambiamos el valor del parámetro del Animator "isGrounded", dependiendo del valor de la booleana del código "isGrounded"
+        //Cambiamos el valor del parï¿½metro del Animator "moveSpeed", dependiendo del valor en X de la velocidad de Rigidbody
+        anim.SetFloat("moveSpeed", Mathf.Abs(theRB.linearVelocity.x));//Mathf.Abs hace que un valor negativo sea positivo, lo que nos permite que al movernos a la izquierda tambiï¿½n se anime esta acciï¿½n
+        //Cambiamos el valor del parï¿½metro del Animator "isGrounded", dependiendo del valor de la booleana del cï¿½digo "isGrounded"
         anim.SetBool("isGrounded", isGrounded);
 
         //Dash
@@ -176,13 +176,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //Método para gestionar el KnockBack producido al jugador al hacerse daño
+    //Mï¿½todo para gestionar el KnockBack producido al jugador al hacerse daï¿½o
     public void KnockBack()
     {
         //Inicializar el contador de KnockBack
         knockBackCounter = knockBackLength;
         //Paralizamos en X al jugador y hacemos que salte en Y
-        theRB.velocity = new Vector2(0f, knockBackForce);
+        theRB.linearVelocity = new Vector2(0f, knockBackForce);
 
         //Activamos el trigger del animator
         anim.SetTrigger("hurt");
@@ -191,7 +191,7 @@ public class PlayerController : MonoBehaviour
      public void Bounce()
     {
         //Impulsamos al jugador rebotando
-        theRB.velocity = new Vector2(theRB.velocity.x, bounceForce);
+        theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, bounceForce);
         
     }
 
@@ -203,11 +203,11 @@ public class PlayerController : MonoBehaviour
         
         if (isLeft)
         {
-            theRB.velocity = new Vector2(transform.localScale.x * -dashingPower, 0f);
+            theRB.linearVelocity = new Vector2(transform.localScale.x * -dashingPower, 0f);
         }
         else
         {
-            theRB.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+            theRB.linearVelocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         }
         tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);

@@ -36,7 +36,7 @@ public class SweepAway : MonoBehaviour
 
             if (Player != null && Player.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
             {
-                rb.velocity = direccionDeGolpeo.normalized * NuevaVelocidadDeGolpeo;
+                rb.linearVelocity = direccionDeGolpeo.normalized * NuevaVelocidadDeGolpeo;
                 anim.SetTrigger("Death");
                 SonidoMosca.Play();
             }

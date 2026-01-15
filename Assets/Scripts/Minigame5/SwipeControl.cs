@@ -30,7 +30,7 @@ public class SwipeControl : MonoBehaviour
 
     void Update()
     {
-        playerRB.velocity = new Vector2(direction * velocidad * Time.deltaTime, playerRB.velocity.y);
+        playerRB.linearVelocity = new Vector2(direction * velocidad * Time.deltaTime, playerRB.linearVelocity.y);
         TestSwipe();
         ControlSwipe();
 
@@ -82,7 +82,7 @@ public class SwipeControl : MonoBehaviour
         {
             if (Distancia.y > 0)
             {
-                playerRB.velocity = Vector2.up * salto * Time.deltaTime;
+                playerRB.linearVelocity = Vector2.up * salto * Time.deltaTime;
             }
             else if(Distancia.y < 0)
             {
